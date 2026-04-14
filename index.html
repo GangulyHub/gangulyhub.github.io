@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Horários - Estética Cosmética</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Seu Horários</h1>
+        <p>Estética Cosmética Profissional</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#agendamento">Agendamento</a></li>
+            <li><a href="#clientes">Clientes</a></li>
+            <li><a href="#localizacao">Localização</a></li>
+        </ul>
+    </nav>
+
+    <section id="sobre">
+        <div class="sobre-container">
+            <div class="sobre-foto">
+                <img src="leizi.jpg.jpeg" alt="Leizi Gomes" class="profissional-foto">
+            </div>
+            <div class="sobre-texto">
+                <h2>Leizi Gomes</h2>
+                <p class="especialidade">Estética Integrativa</p>
+                <p class="descricao">Alívio real para corpo cansado e mente sobrecarregada</p>
+                <p class="destaque">🍀 Resultados visíveis na pele e no bem-estar</p>
+                <p class="sobre-bio">Com anos de experiência em estética profissional, ofereço tratamentos personalizados que transformam não apenas a pele, mas também o bem-estar geral de cada cliente.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="servico">
+            <h3>Massagem Relaxante</h3>
+            <p>Relaxe com nossas massagens especializadas.</p>
+        </div>
+        <div class="servico">
+            <h3>Limpeza de Pele</h3>
+            <p>Cuidado completo para sua pele.</p>
+        </div>
+        <div class="servico">
+            <h3>Depilação Íntima</h3>
+            <p>Serviço profissional e discreto.</p>
+        </div>
+    </section>
+
+
+    <section id="agendamento">
+        <h2>Agendamento</h2>
+        <p class="aviso-whatsapp">📱 Seu agendamento será enviado via WhatsApp para confirmação</p>
+        <form id="form-agendamento">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" required>
+            <label for="servico">Serviço:</label>
+            <select id="servico" required>
+                <option value="">Selecione um serviço</option>
+                <option value="massagem">Massagem Relaxante</option>
+                <option value="limpeza">Limpeza de Pele</option>
+                <option value="depilacao">Depilação Íntima</option>
+            </select>
+            <label for="data">Data:</label>
+            <input type="date" id="data" required>
+            <label for="horario">Horário:</label>
+            <input type="time" id="horario" required>
+            <button type="submit">Agendar</button>
+        </form>
+    </section>
+
+    <section id="clientes">
+        <h2>Clientes Cadastrados</h2>
+        <table id="tabela-clientes">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Telefone</th>
+                    <th>Serviço</th>
+                    <th>Data</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dados simulados -->
+                <tr>
+                    <td>Maria Silva</td>
+                    <td>(11) 99999-9999</td>
+                    <td>Massagem Relaxante</td>
+                    <td>15/04/2026</td>
+                    <td>10:00</td>
+                </tr>
+                <tr>
+                    <td>João Pereira</td>
+                    <td>(11) 88888-8888</td>
+                    <td>Tratamento Facial</td>
+                    <td>16/04/2026</td>
+                    <td>14:00</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Total de clientes: <span id="total-clientes">2</span></p>
+    </section>
+
+    <section id="localizacao">
+        <h2>Nossa Localização</h2>
+        <p>Endereço: Rua Trancredo d'Neve, Inhaúma, Casa 17</p>
+        <p>Contato:</p>
+        <p>Instagram: <img src="https://img.icons8.com/color/48/instagram-new.png" alt="Instagram" width="24" height="24"> <a href="https://www.instagram.com/leizigomes/" target="_blank">@leizigomes</a></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.123456789012!2d-43.2837!3d-22.9068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU0JzI0LjUiUyA0M8KwMTcnMDEuMyJX!5e0!3m2!1sen!2sbr!4v1234567890123!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Seu Horários. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
