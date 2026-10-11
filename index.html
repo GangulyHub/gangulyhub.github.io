@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu Horários - Estética Cosmética</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <header>
@@ -16,6 +17,7 @@
         <ul>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#assistencia-ia">Assistência IA</a></li>
             <li><a href="#agendamento">Agendamento</a></li>
             <li><a href="#clientes">Clientes</a></li>
             <li><a href="#localizacao">Localização</a></li>
@@ -53,6 +55,23 @@
         </div>
     </section>
 
+    <section id="assistencia-ia" class="assistencia-ia">
+        <h2>Assistência Robótica de IA</h2>
+        <div class="ai-grid">
+            <div class="ai-card">
+                <h3>🤖 Atendimento Inteligente</h3>
+                <p>Respostas rápidas, personalizadas e disponíveis 24 horas por dia para orientar clientes e otimizar o atendimento.</p>
+            </div>
+            <div class="ai-card destaque-ai">
+                <h3>⚙️ Automação de Processos</h3>
+                <p>Agendamentos, confirmações e suporte inicial automatizados para reduzir tempo e aumentar produtividade.</p>
+            </div>
+            <div class="ai-card">
+                <h3>📈 Melhor Experiência</h3>
+                <p>Uma experiência moderna e eficiente com a combinação de tecnologia robótica e inteligência artificial.</p>
+            </div>
+        </div>
+    </section>
 
     <section id="agendamento">
         <h2>Agendamento</h2>
@@ -90,24 +109,9 @@
                 </tr>
             </thead>
             <tbody>
-                <!-- Dados simulados -->
-                <tr>
-                    <td>Maria Silva</td>
-                    <td>(11) 99999-9999</td>
-                    <td>Massagem Relaxante</td>
-                    <td>15/04/2026</td>
-                    <td>10:00</td>
-                </tr>
-                <tr>
-                    <td>João Pereira</td>
-                    <td>(11) 88888-8888</td>
-                    <td>Tratamento Facial</td>
-                    <td>16/04/2026</td>
-                    <td>14:00</td>
-                </tr>
             </tbody>
         </table>
-        <p>Total de clientes: <span id="total-clientes">2</span></p>
+        <p>Total de clientes: <span id="total-clientes">0</span></p>
     </section>
 
     <section id="localizacao">
@@ -121,6 +125,29 @@
     <footer>
         <p>&copy; 2026 Seu Horários. Todos os direitos reservados.</p>
     </footer>
+
+    <button class="chat-toggle" id="chat-toggle" aria-label="Abrir chat">💬</button>
+
+    <div class="chat-widget" id="chat-widget" aria-live="polite">
+        <div class="chat-header">
+            <div class="chat-title">
+                <span class="chat-status"></span>
+                RoboIA
+            </div>
+            <button class="chat-close" id="chat-close" aria-label="Fechar chat">×</button>
+        </div>
+
+        <div class="chat-body" id="chat-body">
+            <div class="message bot-message">
+                Olá! Sou o RoboIA. Posso te ajudar com serviços, agendamento e horários.
+            </div>
+        </div>
+
+        <form id="chat-form" class="chat-form">
+            <input id="chat-input" type="text" placeholder="Digite sua dúvida..." autocomplete="off" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 
     <script src="script.js"></script>
 </body>
