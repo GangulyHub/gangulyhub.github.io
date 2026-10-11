@@ -97,19 +97,52 @@
         </div>
     </section>
 
-    <section id="servicos">
-        <h2>Nossos Serviços</h2>
-        <div class="servico">
-            <h3>Massagem Relaxante</h3>
-            <p>Relaxe com nossas massagens especializadas.</p>
-        </div>
-        <div class="servico">
-            <h3>Limpeza de Pele</h3>
-            <p>Cuidado completo para sua pele.</p>
-        </div>
-        <div class="servico">
-            <h3>Depilação Íntima</h3>
-            <p>Serviço profissional e discreto.</p>
+    <section id="servicos" class="servicos">
+        <h2>Serviços &amp; Tratamentos</h2>
+        <p class="servicos-subtitulo">Cuidados integrativos para o corpo e o rosto, no seu ritmo.</p>
+        <p class="servicos-introducao">Cada sessão é personalizada após uma avaliação detalhada. Conheça as experiências de cuidado que preparei para você:</p>
+
+        <div class="servicos-grupos">
+            <div class="servico-grupo">
+                <h3>💆‍♀️ 1. Cuidados Faciais</h3>
+                <article class="servico">
+                    <h4>Limpeza de Pele</h4>
+                    <p>Realizada no momento ideal para a sua pele. Antes do procedimento, avaliamos a presença de sensibilidade ou irritações para, se necessário, fortalecer e restaurar a barreira cutânea primeiro.</p>
+                </article>
+                <article class="servico">
+                    <h4>Tratamentos &amp; Detox Facial</h4>
+                    <p>Protocolos desintoxicantes e acalmantes com ativos selecionados sob medida para as necessidades que a sua pele apresenta no dia.</p>
+                </article>
+                <article class="servico">
+                    <h4>Clareamento Personalizado</h4>
+                    <p>Cuidados específicos para uniformização do tom da pele em áreas sensíveis, como axilas, virilha e olheiras, definidos após avaliação individualizada.</p>
+                </article>
+            </div>
+
+            <div class="servico-grupo">
+                <h3>2. Cuidados Corporais &amp; Bem-Estar</h3>
+                <article class="servico">
+                    <h4>Drenagem Linfática</h4>
+                    <p>Técnica suave e ritmada que estimula o sistema linfático, reduzindo o inchaço, a retenção de líquidos e a sensação de peso nas pernas.</p>
+                </article>
+                <article class="servico">
+                    <h4>Massagem Redux</h4>
+                    <p>Terapia corporal que combina manobras vigorosas e ritmadas para estimular a circulação sanguínea, ajudar na remodelação corporal e melhorar a firmeza da pele, sem descuidar do seu bem-estar.</p>
+                </article>
+                <article class="servico">
+                    <h4>Terapias Corporais &amp; Alívio Tensional</h4>
+                    <p><strong>💆🏾‍♀️ Massagem Relaxante &amp; Terapêutica</strong><br>Combinação de técnicas com ventosaterapia ou pedras quentes em um ambiente acolhedor, promovendo o descanso do corpo e desfazendo nós de tensão da rotina.</p>
+                    <p><strong>👂🏾 Auriculoterapia</strong><br>Técnica milenar de estimulação de pontos específicos na orelha para equilibrar o organismo, diminuir a ansiedade e promover bem-estar físico e emocional.</p>
+                </article>
+            </div>
+
+            <div class="servico-grupo">
+                <h3>3. Cuidados Complementares</h3>
+                <article class="servico">
+                    <h4>Depilação a Cera</h4>
+                    <p>Procedimento realizado com técnicas cuidadosas e atenção total ao conforto, respeitando a sensibilidade da pele em cada região.</p>
+                </article>
+            </div>
         </div>
     </section>
 
@@ -142,9 +175,20 @@
             <label for="servico">Serviço:</label>
             <select id="servico" required>
                 <option value="">Selecione um serviço</option>
-                <option value="massagem">Massagem Relaxante</option>
-                <option value="limpeza">Limpeza de Pele</option>
-                <option value="depilacao">Depilação Íntima</option>
+                <optgroup label="Cuidados Faciais">
+                    <option value="limpeza">Limpeza de Pele</option>
+                    <option value="detox-facial">Tratamentos &amp; Detox Facial</option>
+                    <option value="clareamento">Clareamento Personalizado</option>
+                </optgroup>
+                <optgroup label="Cuidados Corporais &amp; Bem-Estar">
+                    <option value="drenagem">Drenagem Linfática</option>
+                    <option value="redux">Massagem Redux</option>
+                    <option value="massagem">Massagem Relaxante &amp; Terapêutica</option>
+                    <option value="auriculoterapia">Auriculoterapia</option>
+                </optgroup>
+                <optgroup label="Cuidados Complementares">
+                    <option value="depilacao">Depilação a Cera</option>
+                </optgroup>
             </select>
             <label for="data">Data:</label>
             <input type="date" id="data" required>

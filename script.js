@@ -118,10 +118,17 @@ function extrairDadosDoTexto(texto) {
         data: '',
         horario: ''
     };
+    const textoNormalizado = texto.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 
-    if (texto.includes('massagem')) resultado.servico = 'Massagem Relaxante';
-    if (texto.includes('limpeza')) resultado.servico = 'Limpeza de Pele';
-    if (texto.includes('depilacao') || texto.includes('depilação')) resultado.servico = 'Depilação Íntima';
+    if (textoNormalizado.includes('drenagem')) resultado.servico = 'Drenagem Linfática';
+    else if (textoNormalizado.includes('redux')) resultado.servico = 'Massagem Redux';
+    else if (textoNormalizado.includes('auriculo')) resultado.servico = 'Auriculoterapia';
+    else if (textoNormalizado.includes('clareamento')) resultado.servico = 'Clareamento Personalizado';
+    else if (textoNormalizado.includes('detox') || textoNormalizado.includes('tratamento facial')) {
+        resultado.servico = 'Tratamentos & Detox Facial';
+    } else if (textoNormalizado.includes('depilacao')) resultado.servico = 'Depilação a Cera';
+    else if (textoNormalizado.includes('limpeza')) resultado.servico = 'Limpeza de Pele';
+    else if (textoNormalizado.includes('massagem')) resultado.servico = 'Massagem Relaxante & Terapêutica';
 
     const matchData = texto.match(/(\d{1,2}[/-]\d{1,2}[/-]\d{2,4}|\d{4}[/-]\d{1,2}[/-]\d{1,2})/);
     if (matchData) {
@@ -161,7 +168,7 @@ function responderIA(mensagem) {
     }
 
     if (texto.includes('serviço') || texto.includes('servico') || texto.includes('tratamento')) {
-        return 'Oferecemos massagem relaxante, limpeza de pele e depilação íntima. Qual deles você deseja saber mais?';
+        return 'Ofereço cuidados faciais (limpeza de pele, detox e clareamento), corporais (drenagem, Massagem Redux, massagem relaxante e terapêutica, e auriculoterapia) e depilação a cera. Qual gostaria de conhecer melhor?';
     }
 
     if (texto.includes('preço') || texto.includes('valor') || texto.includes('quanto')) {
@@ -173,15 +180,35 @@ function responderIA(mensagem) {
     }
 
     if (texto.includes('massagem')) {
-        return 'A massagem relaxante é ideal para aliviar tensão, melhorar o bem-estar e reduzir o stress do dia a dia.';
+        return 'A massagem relaxante e terapêutica combina técnicas, ventosaterapia ou pedras quentes para promover descanso e aliviar tensões da rotina.';
+    }
+
+    if (texto.includes('drenagem')) {
+        return 'A drenagem linfática é uma técnica suave e ritmada voltada a estimular o sistema linfático e aliviar a sensação de inchaço e peso nas pernas.';
+    }
+
+    if (texto.includes('redux')) {
+        return 'A Massagem Redux usa manobras vigorosas e ritmadas, planejadas de acordo com suas necessidades e seu bem-estar.';
+    }
+
+    if (texto.includes('auriculo')) {
+        return 'A auriculoterapia estimula pontos específicos da orelha. O atendimento é individualizado conforme suas necessidades.';
+    }
+
+    if (texto.includes('clareamento')) {
+        return 'O clareamento personalizado é definido após avaliação individualizada, considerando as necessidades de cada pele e região.';
+    }
+
+    if (texto.includes('detox') || texto.includes('tratamento facial')) {
+        return 'Os tratamentos e o detox facial usam ativos selecionados sob medida para as necessidades que sua pele apresenta no dia.';
     }
 
     if (texto.includes('pele') || texto.includes('limpeza')) {
-        return 'A limpeza de pele ajuda a renovar a aparência, remover impurezas e melhorar o aspecto da sua pele.';
+        return 'Os cuidados faciais são definidos após avaliar as necessidades da sua pele e podem incluir limpeza, detox ou clareamento personalizado.';
     }
 
     if (texto.includes('depilação') || texto.includes('depilacao')) {
-        return 'A depilação íntima é feita com cuidado, profissionalismo e total atenção à sua privacidade.';
+        return 'A depilação a cera é realizada com atenção ao conforto e à sensibilidade da pele em cada região.';
     }
 
     if (texto.includes('oi') || texto.includes('olá') || texto.includes('ola')) {
