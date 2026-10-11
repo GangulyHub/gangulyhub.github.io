@@ -131,14 +131,18 @@ nav a:hover {
     text-align: center;
 }
 
-.sobre-texto .sobre-bio {
-    font-size: 1.05em;
-    line-height: 1.8;
-    color: #444;
-    text-align: center;
+.sobre-biografia {
     margin-top: 25px;
     padding-top: 20px;
     border-top: 2px solid rgba(255, 105, 180, 0.2);
+}
+
+.sobre-biografia p {
+    font-size: 1.05em;
+    line-height: 1.8;
+    color: #444;
+    text-align: left;
+    margin: 0 0 14px;
 }
 
 @media (max-width: 768px) {
@@ -529,14 +533,14 @@ h2 {
 }
 
 .sobre-texto .descricao,
-.sobre-texto .sobre-bio,
+.sobre-biografia p,
 .ai-card p,
 .footer-profissional .descricao,
 .footer-profissional .sobre-bio {
     color: #d0c6b2;
 }
 
-.sobre-texto .sobre-bio {
+.sobre-biografia {
     border-top-color: rgba(215, 181, 109, 0.25);
 }
 
