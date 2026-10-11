@@ -26,8 +26,9 @@ jobs:
 
       - name: Prepare static site
         run: |
-          mkdir public
+          mkdir -p public/leizigomes
           cp index.html styles.css script.js leizi.jpg.jpeg public/
+          cp index.html styles.css script.js leizi.jpg.jpeg public/leizigomes/
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
