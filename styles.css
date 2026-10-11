@@ -733,6 +733,45 @@ footer {
     line-height: 1.75;
 }
 
+.resultados {
+    padding: clamp(28px, 5vw, 48px);
+    text-align: center;
+    background: linear-gradient(135deg, #11100e 0%, #1a1711 100%);
+}
+
+.resultados h2 {
+    margin: 0 0 18px;
+    font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+}
+
+.avaliacao-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    color: #e8dfcb;
+    font-size: 1.05rem;
+}
+
+.avaliacao-google .estrelas {
+    color: #e0bf73;
+    font-size: 1.4rem;
+    letter-spacing: 0.08em;
+}
+
+.avaliacao-google strong {
+    color: #e0bf73;
+    font-size: 1.2rem;
+}
+
+.avaliacao-nota {
+    margin: 10px 0 0;
+    color: #bdb29d;
+    font-size: 0.9rem;
+}
+
 @media (max-width: 640px) {
     .principios-grid {
         grid-template-columns: 1fr;
