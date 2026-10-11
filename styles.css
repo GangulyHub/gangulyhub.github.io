@@ -483,3 +483,187 @@ footer {
     font-size: 0.9em;
     margin: 0;
 }
+
+body {
+    background-color: #080706;
+    color: #e8dfcb;
+}
+
+header,
+nav,
+footer {
+    background: #050505;
+    color: #d7b56d;
+}
+
+header,
+nav {
+    border-bottom: 1px solid rgba(215, 181, 109, 0.25);
+}
+
+nav a,
+.footer-profissional h3,
+.footer-profissional .especialidade,
+.footer-profissional .destaque {
+    color: #d7b56d;
+}
+
+#sobre {
+    background: linear-gradient(135deg, #080706 0%, #17130c 100%);
+}
+
+.profissional-foto {
+    border-color: #17130c;
+    box-shadow: 0 15px 40px rgba(215, 181, 109, 0.18);
+}
+
+.sobre-texto h2,
+.sobre-texto .destaque,
+.servico h3,
+h2 {
+    color: #d7b56d;
+}
+
+.sobre-texto .especialidade {
+    color: #c6a45c;
+}
+
+.sobre-texto .descricao,
+.sobre-texto .sobre-bio,
+.ai-card p,
+.footer-profissional .descricao,
+.footer-profissional .sobre-bio {
+    color: #d0c6b2;
+}
+
+.sobre-texto .sobre-bio {
+    border-top-color: rgba(215, 181, 109, 0.25);
+}
+
+section {
+    background-color: #11100e;
+    border: 1px solid rgba(215, 181, 109, 0.16);
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+}
+
+.assistencia-ia {
+    background: linear-gradient(135deg, #11100e 0%, #1a1711 100%);
+    border-color: rgba(215, 181, 109, 0.2);
+}
+
+.ai-card,
+.destaque-ai {
+    background: #191714;
+    border-color: rgba(215, 181, 109, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.ai-card h3 {
+    color: #d7b56d;
+}
+
+.aviso-whatsapp {
+    background-color: #142018;
+    color: #9cdbad;
+    border-left-color: #25d366;
+}
+
+label {
+    color: #e8dfcb;
+}
+
+input,
+select,
+.chat-form input {
+    background-color: #0b0a09;
+    color: #f3ead8;
+    border-color: #65532f;
+}
+
+input:focus,
+select:focus,
+.chat-form input:focus {
+    outline: 2px solid #d7b56d;
+    outline-offset: 1px;
+}
+
+button,
+.chat-form button {
+    background: #d7b56d;
+    color: #100e09;
+}
+
+button:hover,
+.chat-form button:hover {
+    background: #e6c77f;
+}
+
+th {
+    background-color: #302718;
+    color: #e8cf91;
+}
+
+th,
+td {
+    border-color: #443a29;
+}
+
+tr:nth-child(even) {
+    background-color: #191714;
+}
+
+#localizacao a {
+    color: #e1c47d;
+}
+
+.chat-toggle {
+    background: linear-gradient(135deg, #e0bf73 0%, #b89043 100%);
+    color: #100e09;
+    box-shadow: 0 10px 25px rgba(215, 181, 109, 0.25);
+}
+
+.chat-widget {
+    background: #11100e;
+    border-color: rgba(215, 181, 109, 0.3);
+}
+
+.chat-header {
+    background: linear-gradient(135deg, #352b18 0%, #17130c 100%);
+    color: #e8cf91;
+}
+
+.chat-close {
+    background: transparent;
+    color: #e8cf91;
+}
+
+.chat-body {
+    background: #0b0a09;
+}
+
+.bot-message {
+    background: #242017;
+    color: #e8dfcb;
+}
+
+.user-message {
+    background: #3b301b;
+    color: #f3dfad;
+}
+
+.chat-form {
+    background: #11100e;
+    border-top-color: #3b3223;
+}
+
+.chat-form button {
+    color: #100e09;
+}
+
+footer {
+    border-top: 1px solid rgba(215, 181, 109, 0.25);
+}
+
+.copyright {
+    border-top-color: rgba(215, 181, 109, 0.3);
+}
