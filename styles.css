@@ -39,6 +39,10 @@ nav ul li {
     margin: 0 15px;
 }
 
+nav ul li[hidden] {
+    display: none;
+}
+
 nav a {
     color: white;
     text-decoration: none;
