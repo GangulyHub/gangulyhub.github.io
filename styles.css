@@ -772,6 +772,39 @@ footer {
     font-size: 0.9rem;
 }
 
+.avaliacoes-fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 18px;
+    max-width: 1100px;
+    margin: 28px auto 0;
+    text-align: left;
+}
+
+.avaliacao-foto {
+    margin: 0;
+    padding: 8px;
+    overflow: hidden;
+    border: 1px solid rgba(215, 181, 109, 0.3);
+    border-radius: 14px;
+    background: #f5f6f8;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
+}
+
+.avaliacao-foto img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.avaliacao-foto figcaption {
+    padding: 10px 6px 4px;
+    color: #302718;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
 @media (max-width: 640px) {
     .principios-grid {
         grid-template-columns: 1fr;
