@@ -169,7 +169,7 @@ function responderIA(mensagem) {
     }
 
     if (texto.includes('local') || texto.includes('endereço') || texto.includes('onde')) {
-        return 'Estamos localizados em Rua Trancredo d\'Neve, Inhaúma, Casa 17. Posso te ajudar com mais detalhes.';
+        return 'Estamos localizados em Inhaúma - RJ. Posso te ajudar com mais detalhes.';
     }
 
     if (texto.includes('massagem')) {
